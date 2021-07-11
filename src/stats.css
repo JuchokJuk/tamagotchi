@@ -27,7 +27,7 @@
 }
 
 .health {
-  background: url(images/heart.png) no-repeat center center;
+  background: url(images/heart.svg) no-repeat center center;
   background-size: cover;
   width: 15px;
   height: 15px;
@@ -42,14 +42,14 @@
   margin-right: 9px;
 }
 .energy {
-  background: url(images/lightning.png) no-repeat center center;
+  background: url(images/lightning.svg) no-repeat center center;
   background-size: cover;
   width: 15px;
   height: 15px;
   margin-right: 9px;
 }
 .happiness {
-  background: url(images/star.png) no-repeat center center;
+  background: url(images/star.svg) no-repeat center center;
   background-size: cover;
   width: 15px;
   height: 15px;
