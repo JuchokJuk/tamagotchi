@@ -1,0 +1,57 @@
+.stats .window-body {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-gap: 8px;
+}
+
+.progressbar {
+  width: 91px;
+
+  box-shadow: inset -1px -1px #dfdfdf, inset 1px 1px grey;
+
+  background: silver;
+  display: flex;
+  padding: 1px;
+}
+
+.line {
+  width: 7px;
+  height: 11px;
+  margin: 1px;
+  background: var(--themeColor);
+}
+
+.statContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.health {
+  background: url(images/heart.png) no-repeat center center;
+  background-size: cover;
+  width: 15px;
+  height: 15px;
+  margin-right: 9px;
+}
+.satiety {
+  background: url(images/chikenLeg.png)
+    no-repeat center center;
+  background-size: cover;
+  width: 15px;
+  height: 15px;
+  margin-right: 9px;
+}
+.energy {
+  background: url(images/lightning.png) no-repeat center center;
+  background-size: cover;
+  width: 15px;
+  height: 15px;
+  margin-right: 9px;
+}
+.happiness {
+  background: url(images/star.png) no-repeat center center;
+  background-size: cover;
+  width: 15px;
+  height: 15px;
+  margin-right: 9px;
+}

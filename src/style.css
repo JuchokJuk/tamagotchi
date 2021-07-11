@@ -1,0 +1,141 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin-bottom: 0 !important;
+}
+html {
+  width: 100%;
+  height: 100%;
+  user-select: none;
+}
+body {
+  width: 100%;
+  height: 100%;
+  background: silver;
+  overflow: hidden;
+  
+  --themeColor: hsl(0, 52%, 30%);
+  --themeColorLight: hsl(0, 40%, 53%);
+}
+#root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+.window {
+  box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf,
+    inset -2px -2px grey, inset 2px 2px #fff,
+    10px 10px 0px 0px rgba(0, 0, 0, 0.1);
+  width: fit-content;
+  position: absolute;
+}
+.title-bar {
+  background: linear-gradient(90deg, var(--themeColor), var(--themeColorLight));
+  padding: 0px;
+}
+.title-bar-text {
+  width: 100%;
+  margin: 0;
+  padding: 3px 21px 3px 3px;
+}
+.title-bar-controls {
+  padding: 3px 2px 3px 3px;
+}
+.cat {
+  background: url(images/bup.png) no-repeat center center;
+  background-size: contain;
+  position: absolute;
+}
+
+.appear {
+  animation: appear 0.5s steps(3) 1;
+}
+.disappear {
+  animation: disappear 0.5s steps(3) 1;
+}
+@keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.hidden {
+  display: none;
+}
+
+.noShadow {
+  box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf,
+    inset -2px -2px grey, inset 2px 2px #fff;
+}
+.roomContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 2px;
+  box-shadow: inset -1px -1px #fff, inset 1px 1px grey, inset -2px -2px #dfdfdf,
+    inset 2px 2px #0a0a0a;
+}
+.room {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.kitchen {
+  background: url(images/kitchen.png) no-repeat center center;
+  background-size: contain;
+}
+.livingroom {
+  background: url(images/livingroom.png) no-repeat center center;
+  background-size: contain;
+}
+.bedroom {
+  background: url(images/bedroom.png) no-repeat center center;
+  background-size: contain;
+}
+.bathroom {
+  background: url(images/bathroom.png) no-repeat center center;
+  background-size: contain;
+}
+
+.zIndex0 {
+  z-index: 0;
+}
+.zIndex1 {
+  z-index: 1;
+}
+.zIndex2 {
+  z-index: 2;
+}
+.zIndex3 {
+  z-index: 3;
+}
+.zIndex4 {
+  z-index: 4;
+}

@@ -1,0 +1,56 @@
+/* credits to creme (https://codepen.io/creme)*/
+
+html {
+  background: url(http://lsdex.ru/wp-content/uploads/2012/08/11.gif) repeat;
+}
+body {
+  opacity: 0.98;
+}
+
+.lines {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 300;
+  opacity: 0.1;
+}
+
+.lines:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    to bottom,
+    transparent 50%,
+    rgba(0, 0, 0, 0.5) 50%
+  );
+  background-size: 100% 4px;
+  will-change: background;
+  animation: scanlines 0.2s linear infinite;
+}
+
+@keyframes scanlines {
+  from {
+    background: linear-gradient(
+      to bottom,
+      transparent 50%,
+      rgba(0, 0, 0, 0.5) 50%
+    );
+    background-size: 100% 4px;
+  }
+  to {
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.5) 50%,
+      transparent 50%
+    );
+    background-size: 100% 4px;
+  }
+}

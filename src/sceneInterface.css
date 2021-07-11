@@ -1,0 +1,36 @@
+.sceneInterfaceContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.buttonsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.moneyContainer {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: flex-end;
+}
+.roomIcon {
+  width: 60px;
+  height: 60px;
+  background: url(images/demo.png) no-repeat center center;
+  background-size: contain;
+}
+.leftButton {
+  margin: 8px;
+}
+.rightButton {
+  margin: 8px;
+}
+.rightButton .roomIcon{
+  transform: scale(-1, 1);
+}
+.money {
+  margin: 8px;
+}
